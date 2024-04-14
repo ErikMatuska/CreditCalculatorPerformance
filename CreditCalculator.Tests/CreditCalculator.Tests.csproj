@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CreditCalculator.After\CreditCalculator.After.csproj" />
-    <ProjectReference Include="..\CreditCalculator.Before\CreditCalculator.Before.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,8 +4,8 @@ using RegistR.Attributes.Base;
 
 namespace CreditCalculator.After.Infrastructure;
 
-[Register<ICustomerRepository>]
-public class CustomerRepository : ICustomerRepository
+[Obsolete("Replaced with file providers")]
+public class InMemoryCustomerRepository : ICustomerRepository
 {
     private readonly List<Customer> _customers = [];
 

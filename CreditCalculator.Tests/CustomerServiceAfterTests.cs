@@ -55,7 +55,7 @@ public class CustomerServiceAfterTests
         // Arrange
         var customerService = new CustomerService(
             new CompanyRepository(),
-            new CustomerRepository(),
+            new InMemoryCustomerRepository(),
             new CreditLimitCalculator(new CustomerCreditServiceClient()),
             new DateTimeProvider());
         var invalidDateOfBirth = DateTime.Now.AddYears(-20);
@@ -73,7 +73,7 @@ public class CustomerServiceAfterTests
         // Arrange
         var customerService = new CustomerService(
             new CompanyRepository(),
-            new CustomerRepository(),
+            new InMemoryCustomerRepository(),
             new CreditLimitCalculator(new CustomerCreditServiceClient()),
             new DateTimeProvider());
 
@@ -90,7 +90,7 @@ public class CustomerServiceAfterTests
         // Arrange
         var customerService = new CustomerService(
             new CompanyRepository(),
-            new CustomerRepository(),
+            new InMemoryCustomerRepository(),
             new CreditLimitCalculator(new CustomerCreditServiceClient()),
             new DateTimeProvider());
 
@@ -107,7 +107,7 @@ public class CustomerServiceAfterTests
         // Arrange
         var customerService = new CustomerService(
             new CompanyRepository(),
-            new CustomerRepository(),
+            new InMemoryCustomerRepository(),
             new CreditLimitCalculator(new CustomerCreditServiceClient()),
             new DateTimeProvider());
 
@@ -124,7 +124,7 @@ public class CustomerServiceAfterTests
         // Arrange
         var customerService = new CustomerService(
             new CompanyRepository(),
-            new CustomerRepository(),
+            new InMemoryCustomerRepository(),
             new CreditLimitCalculator(new CustomerCreditServiceClient()),
             new DateTimeProvider());
 
@@ -144,7 +144,7 @@ public class CustomerServiceAfterTests
         // Arrange
         var customerService = new CustomerService(
             new CompanyRepository(),
-            new CustomerRepository(),
+            new InMemoryCustomerRepository(),
             new CreditLimitCalculator(new CustomerCreditServiceClient()),
             new DateTimeProvider());
 

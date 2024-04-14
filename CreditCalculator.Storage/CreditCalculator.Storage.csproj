@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RegistR.Attributes" Version="1.0.0" />
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CreditCalculator.Domain\CreditCalculator.Domain.csproj" />
-    <ProjectReference Include="..\CreditCalculator.Storage\CreditCalculator.Storage.csproj" />
   </ItemGroup>
 
 </Project>

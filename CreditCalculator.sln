@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCalculator.Before", "CreditCalculator.Before\CreditCalculator.Before.csproj", "{8F9BA545-DD96-4A9B-A516-BE4AD2EF9DCB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCalculator.After", "CreditCalculator.After\CreditCalculator.After.csproj", "{F7F4F7CF-4F83-4982-BFB2-D33E3EFA0049}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCalculator.Tests", "CreditCalculator.Tests\CreditCalculator.Tests.csproj", "{54C6FC76-AD79-4734-8B66-3C4B6C526EDA}"
@@ -13,16 +11,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCalculator.Presentati
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3C34A095-550A-42FF-988F-B7714DCE3D20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCalculator.Storage", "CreditCalculator.Storage\CreditCalculator.Storage.csproj", "{353E0431-9440-46F2-8AB8-070554E09AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCalculator.Domain", "CreditCalculator.Domain\CreditCalculator.Domain.csproj", "{13066F12-E5FC-46A5-9703-4FCFFF8BBE7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCalculator.Console", "CreditCalculator.Console\CreditCalculator.Console.csproj", "{CD3C6185-3BDB-4A5E-83A7-AB4075198764}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8F9BA545-DD96-4A9B-A516-BE4AD2EF9DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F9BA545-DD96-4A9B-A516-BE4AD2EF9DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F9BA545-DD96-4A9B-A516-BE4AD2EF9DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F9BA545-DD96-4A9B-A516-BE4AD2EF9DCB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7F4F7CF-4F83-4982-BFB2-D33E3EFA0049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7F4F7CF-4F83-4982-BFB2-D33E3EFA0049}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7F4F7CF-4F83-4982-BFB2-D33E3EFA0049}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +35,18 @@ Global
 		{044F716B-E221-4A20-9A05-DF1427FB896D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{044F716B-E221-4A20-9A05-DF1427FB896D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{044F716B-E221-4A20-9A05-DF1427FB896D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353E0431-9440-46F2-8AB8-070554E09AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353E0431-9440-46F2-8AB8-070554E09AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353E0431-9440-46F2-8AB8-070554E09AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353E0431-9440-46F2-8AB8-070554E09AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13066F12-E5FC-46A5-9703-4FCFFF8BBE7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13066F12-E5FC-46A5-9703-4FCFFF8BBE7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13066F12-E5FC-46A5-9703-4FCFFF8BBE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13066F12-E5FC-46A5-9703-4FCFFF8BBE7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3C6185-3BDB-4A5E-83A7-AB4075198764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3C6185-3BDB-4A5E-83A7-AB4075198764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3C6185-3BDB-4A5E-83A7-AB4075198764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3C6185-3BDB-4A5E-83A7-AB4075198764}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
 using CreditCalculator.After.Application;
+using CreditCalculator.Storage;
 using RegistR.Attributes.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.InstallRegisterAttribute(typeof(CustomerService).Assembly);
+builder.Services.AddTransient<ICustomerDataProvider, JsonCustomerDataProvider>();
 
 var app = builder.Build();
 

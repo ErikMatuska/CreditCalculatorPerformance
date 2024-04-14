@@ -65,4 +65,9 @@ public class CustomerService(
 
         return age;
     }
+
+    public IEnumerable<Customer> GetCustomers()
+    {
+        return customerRepository.GetCustomers();
+    }
 }
