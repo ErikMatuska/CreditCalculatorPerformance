@@ -1,9 +1,11 @@
 ﻿using CreditCalculator.After.Application;
 using CreditCalculator.After.Domain;
 using CreditCalculator.Storage;
+using RegistR.Attributes.Base;
 
 namespace CreditCalculator.After.Infrastructure;
 
+[Register<ICustomerRepository>]
 public class FileStorageCustomerRepository : ICustomerRepository
 {
     private readonly ICustomerDataProvider _customerDataProvider;
