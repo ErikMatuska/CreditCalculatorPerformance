@@ -7,5 +7,10 @@ namespace CreditCalculator.Console
 {
     public class ReaderBenchmark
     {
+        [GlobalSetup]
+        public void Setup()
+        {
+            new CustomerGeneratorRunner().GenerateData();
+        }
     }
 }
