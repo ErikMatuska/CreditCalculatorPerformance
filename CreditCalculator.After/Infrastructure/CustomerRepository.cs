@@ -1,5 +1,6 @@
 ﻿using CreditCalculator.After.Application;
 using CreditCalculator.After.Domain;
+using CreditCalculator.Storage;
 using RegistR.Attributes.Base;
 
 namespace CreditCalculator.After.Infrastructure;
@@ -16,3 +17,23 @@ public class InMemoryCustomerRepository : ICustomerRepository
         _customers.Add(customer);
     }
 }
+
+////public class FileStorageCustomerRepository : ICustomerRepository
+////{
+////    private readonly ICustomerDataProvider _customerDataProvider;
+
+////    public FileStorageCustomerRepository(ICustomerDataProvider customerDataProvider)
+////    {
+////        this._customerDataProvider = customerDataProvider;
+////    }
+
+////    public void AddCustomer(Customer customer)
+////    {
+////        throw new NotImplementedException();
+////    }
+
+////    public List<Customer> GetCustomers()
+////    {
+////        throw new NotImplementedException();
+////    }
+////}

@@ -17,7 +17,7 @@ public class FileStorageCustomerRepository : ICustomerRepository
 
     public void AddCustomer(Customer customer)
     {
-        throw new NotImplementedException();
+        _customerDataProvider.AddCustomer(customer);
     }
 
     public List<Customer> GetCustomers()

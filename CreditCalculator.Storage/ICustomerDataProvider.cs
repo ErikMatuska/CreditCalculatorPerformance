@@ -5,6 +5,7 @@ namespace CreditCalculator.Storage
 {
     public interface ICustomerDataProvider
     {
+        void AddCustomer(Customer customer);
         List<Customer> GetCustomers();
     }
 }

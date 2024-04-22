@@ -1,13 +1,12 @@
 ﻿using CreditCalculator.After.Domain;
 using Newtonsoft.Json;
 
-namespace CreditCalculator.Storage
+namespace CreditCalculator.Storage;
+
+public class JsonCustomerDataProvider : ICustomerDataProvider
 {
-    public class JsonCustomerDataProvider : ICustomerDataProvider
+    public List<Customer> GetCustomers()
     {
-        public List<Customer> GetCustomers()
-        {
-            return JsonConvert.DeserializeObject<List<Customer>>(File.ReadAllText("customers.json"));
-        }
+        return Newtonsoft.Json.JsonConvert.DeserializeObject<List<Customer>>(File.ReadAllText("customers.json"));
     }
 }
