@@ -13,7 +13,7 @@ public class JsonSystemCustomerDataProvider : ICustomerDataProvider
 
         current.Add(customer);
 
-        File.WriteAllText("customers.json", JsonConvert.SerializeObject(current));
+        File.WriteAllText("customers.json", System.Text.Json.JsonSerializer.Serialize(current));
     }
 
     public List<Customer> GetCustomers()

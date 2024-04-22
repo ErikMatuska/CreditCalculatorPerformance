@@ -5,6 +5,11 @@ namespace CreditCalculator.Storage
 {
     public class XmlCustomerDataProvider : ICustomerDataProvider
     {
+        public void AddCustomer(Customer customer)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Customer> GetCustomers()
         {
             List<Customer> customers = new List<Customer>();

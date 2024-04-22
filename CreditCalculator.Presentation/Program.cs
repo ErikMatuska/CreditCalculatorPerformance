@@ -12,7 +12,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.InstallRegisterAttribute(typeof(CustomerService).Assembly);
-builder.Services.AddTransient<ICustomerDataProvider, JsonCustomerDataProvider>();
+
+////builder.Services.AddTransient<ICustomerDataProvider, JsonCustomerDataProvider>();
+////builder.Services.AddTransient<ICustomerDataProvider, XmlCustomerDataProvider>();
+builder.Services.AddTransient<ICustomerDataProvider, JsonSystemCustomerDataProvider>();
 
 var app = builder.Build();
 
